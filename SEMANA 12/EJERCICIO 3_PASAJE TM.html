@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASAJE TM</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="./img/TRANSMILENIO.jpeg" alt="" width="150" height="150">
+        <h1>INGRESO / SALDO TARJETA TRANSMILENIO</h1>
+        <script>
+            //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular total a pagar, muéstrelo por un mensaje de alerta al usuario, luego permita la captura de la forma de pago (Efectivo, Nequi o Tarjeta de crédito) y validar promoción de aniversario si paga en efectivo y por compras desde $50.0000 se le obsequia un taco de galletas sino una chocolatina, finalmente enviar mensaje Gracias por su compra//
+            //variable
+            let saldo;
+            const tm=2950;
+            //Entrada
+            saldo=parseInt(prompt("Ingrese saldo inicial de tarjeta TM"));
+            //Proceso condicional SI
+            if (saldo>=tm){
+                swal("Estimado usuario", "Ingrese a Transmilenio", "success");
+            }else{
+                swal("Estimado usuario", "Saldo insuficiente: Recargue tarjeta TM", "error");
+            }
+        </script>
+    </center>
+</body>
+</html>
